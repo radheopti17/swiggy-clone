@@ -9,7 +9,6 @@ const Body = (props) => {
   const [searchText, setSearchText] = useState("");
   const [allRestaurant, setAllRestaurant] = useState([]);
   const { loggedInUser, setUserName } = useContext(UserContext);
-  console.log(useContext(UserContext));
   const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
 
   useEffect(() => {
